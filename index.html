@@ -25,22 +25,75 @@
     cursor:pointer;
    }
    
+   div.thanku_note{
+    color:#fff;
+    background-color:#f52887;
+    display:none;
+    position:fixed;
+    right:45%;
+    top:20%;
+    width:170px;
+    height:100px;
+    border:solid 1px #f52887;
+    padding:5px;
+    text-align:center;
+   }
    span.mynickname:hover{
     color:#fff;
+   }
+   
+   span.mynickname:hover~div.thanku_note{
+    display:block;
    }
 
    a{
      text-decoration:none;
+     color:inherit;
+   }
+   div.fb_note{
+    background-color:#3b5998;
+    color:#fff;
+    font-weight:bold;
+    font-family:Arial;
+    text-align:center;
+    padding-top:10px;
+    font-size:3em;
+    width:100px;
+    height:80px;
+    position:fixed;
+    top:20%;
+    right:48%;
+    display:none;
    }
    span.myfb{
     color:#3b5998;
     font-weight:bold;
    }
+
+   span.myfb:hover~div.fb_note{
+    display:block;
+   }
+
+
+  div.thanku_note span#rotate{
+   font-size:4em;
+   font-weight:bold;
+   font-family:Arial;
+   -webkit-transform:rotate(90deg);
+   display:block;
+  }
   </style>
  </head>
  <body>
   Hi,<br>
-  &nbsp;Its me,Renjith [ <a href='http://facebook.com/renlinx'><span class='myfb'>renlinx</span></a> ].You can call me <span class='mynickname'>`thanku`</span> :p.<br><br>
+  &nbsp;Its me,Renjith [ <span class='myfb'><a href='http://facebook.com/renlinx'>renlinx</a></span> ].You can call me <span class='mynickname'>`thanku`</span> :p.<br><br>
   <input class='cmd' placeholder='type something :/' type="text"/>
+  <div class="fb_note">
+   f
+  </div>
+  <div class='thanku_note'>
+   <span id="rotate">:)</span>
+   <small>have a nice day</small>
+  </div>
  </body>
 </html>
