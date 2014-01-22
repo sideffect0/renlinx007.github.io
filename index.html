@@ -3,12 +3,44 @@
   <style>
    body{
     background-color:#000;
-    color:#aaffaa;
-    font-family:cursive;
+    color:#00ff18;
+    font-family:courier;
+   }
+  
+   input.cmd{
+    outline:none;
+    background:inherit;
+    width:100%;
+    height:50px;
+    color:inherit;
+    border:solid 1px #00ff18;
+    padding:5px;
+    font-size:1.2em;
+   }
+   span.mynickname{
+    color: #f52887;
+    font-weight:bold;
+    transition:color 1s;
+    -webkit-transition:color 1s;
+    cursor:pointer;
+   }
+   
+   span.mynickname:hover{
+    color:#fff;
+   }
+
+   a{
+     text-decoration:none;
+   }
+   span.myfb{
+    color:#3b5998;
+    font-weight:bold;
    }
   </style>
  </head>
  <body>
-  Hello World
+  Hi,<br>
+  &nbsp;Its me,Renjith [ <a href='http://facebook.com/renlinx'><span class='myfb'>renlinx</span></a> ].You can call me <span class='mynickname'>`thanku`</span> :p.<br><br>
+  <input class='cmd' placeholder='Command Please ..' type="text"/>
  </body>
 </html>
