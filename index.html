@@ -95,21 +95,26 @@
   }
   </style>
  <script>
-  function doSpinit(){
-   alert("hi");
+  function doSpinit(element){
+   var value = element.value;
+   switch(value){
+    case "a": console.log("hoo");
+   }
   }
  </script>
  </head>
  <body>
   Hi,<br>
   &nbsp;Its me,Renjith [ <span class='myfb'><a href='http://facebook.com/renlinx'>renlinx</a></span> ].You can call me <span class='mynickname'>`thanku`</span> :p.<br><br>
-  <input class='cmd' placeholder='type something :/' type="text" onchange="doSpinit()"/>
+  <input class='cmd' placeholder='type something :/' type="text" onchange="doSpinit(this)"/>
   <div class="fb_note">
    f
   </div>
   <div class='thanku_note'>
    <span id="rotate">:)</span>
    <small>have a nice day</small>
+  </div>
+  <div>
   </div>
  </body>
 </html>
