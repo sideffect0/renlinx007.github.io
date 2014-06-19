@@ -104,11 +104,21 @@
   }
 
   function TypeText(strdata){
-   for(var i=0;i<strdata.length;i++){
-     setTimeout(function(){
-        var divt = document.getElementById("typecontent");
-	divt.innerHTML+=strdata[i];
-     },500);
+   var divt = document.getElementById("typecontent");
+   divt.innerHTML = "";
+   window.i = 0;
+   setTimeout(function(){
+	__doit(divt,strdata,i);
+   },500);
+  }
+ 
+  function __doit(element,strdata,i){
+   if(i<strdata.length){
+    element.innerHTML += strdata;
+    window.i+=1;
+    setTimeout(function(){
+	__doit(divt,strdata,i);
+    },500);
    }
   }
  </script>
