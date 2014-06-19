@@ -98,7 +98,17 @@
   function doSpinit(element){
    var value = element.value;
    switch(value){
-    case "about": console.log("check");
+    case "about": TypeText("My Name is Renjith Thankachan ... Type Help For More...");break;
+    case "help": // TypeText("Type <br> 1.about");break;
+   }
+  }
+
+  function TypeText(str){
+   for(var i=0;i<str.length;i++){
+     setTimeout(function(){
+        var divt = document.getElementById("#typecontent");
+	divt.innerHTML+=str[i];
+     },500);
    }
   }
  </script>
@@ -114,7 +124,7 @@
    <span id="rotate">:)</span>
    <small>have a nice day</small>
   </div>
-  <div>
+  <div id="typecontent">
   </div>
  </body>
 </html>
