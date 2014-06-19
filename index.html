@@ -103,11 +103,11 @@
    }
   }
 
-  function TypeText(str){
-   for(var i=0;i<str.length;i++){
+  function TypeText(strdata){
+   for(var i=0;i<strdata.length;i++){
      setTimeout(function(){
-        var divt = document.getElementById("#typecontent");
-	divt.innerHTML+=str[i];
+        var divt = document.getElementById("typecontent");
+	divt.innerHTML+=strdata[i];
      },500);
    }
   }
